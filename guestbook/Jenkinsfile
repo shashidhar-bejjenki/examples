@@ -10,7 +10,7 @@ pipeline {
             stage('DeployToDev') {
                steps {
                 kubernetesDeploy{
-                    kubeconfigId: 'kubeconfig1',
+                    kubeconfigId: 'kubeconfig',
                     configs: 'create-namespace.yaml',
                     enableConfigSubstitution: true
             }
