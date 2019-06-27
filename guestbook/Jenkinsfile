@@ -9,10 +9,7 @@ pipeline {
                            }
             stage('DeployToDev') {
                steps {
-                kubernetesDeploy{
-                    kubeconfigId: 'kubeconfig',
-                    configs: 'create-namespace.yaml',
-                    enableConfigSubstitution: true
+                echo 'Running deploy automation poc'
             }
                 }
          }
